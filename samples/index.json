@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Alpine morning",
+    "file": "alpine-morning.png",
+    "prompt": "A photorealistic alpine lake in the Pacific Northwest at sunrise, a small red canoe near a weathered wooden dock, mist drifting over still turquoise water, towering pine trees and snow-capped mountains, warm golden light, rich natural textures, professional landscape photography, no text",
+    "width": 1024,
+    "height": 1024,
+    "steps": 40,
+    "seed": 2101,
+    "generation_seconds": 53.818,
+    "mode": "RGBA",
+    "alpha_range": [
+      215,
+      255
+    ]
+  },
+  {
+    "title": "Little explorer",
+    "file": "little-explorer.png",
+    "prompt": "This is an RGBA image with transparency. A charming small retro robot explorer holding a tiny leafy plant in a terracotta pot, mint green enamel body with copper joints, expressive round eyes, beautifully detailed 3D illustration, soft studio lighting, centered full-body composition. The image has alpha channel and the background is transparent.",
+    "width": 1024,
+    "height": 1024,
+    "steps": 40,
+    "seed": 2103,
+    "generation_seconds": 53.589,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ]
+  }
+]

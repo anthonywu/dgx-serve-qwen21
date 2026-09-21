@@ -1,0 +1,33 @@
+[project]
+name = "dgx-serve-qwen21"
+version = "0.1.0"
+description = "Persistent Qwen Image 2.1 server for NVIDIA DGX Spark"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.14.2,<3.15"
+dependencies = [
+    "accelerate>=1.15.0",
+    "diffusers",
+    "fastapi>=0.141.1",
+    "huggingface-hub>=1.32.0",
+    "pillow>=12.3.0",
+    "psutil>=7.2.2",
+    "pydantic==2.13.5",
+    "torch==2.12.0",
+    "torchvision==0.27.0",
+    "transformers==5.17.0",
+    "uvicorn>=0.53.0",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'aarch64'"]
+
+[tool.uv.sources]
+diffusers = { git = "https://github.com/huggingface/diffusers.git", rev = "80c7ed262aeffbeb43ef13ae04baeb9b84515a69" }
+
+[dependency-groups]
+dev = [
+    "httpx==0.28.1",
+]

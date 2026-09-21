@@ -1,0 +1,15 @@
+.venv
+.venv-*/
+model/
+logs/
+outputs/
+__pycache__/
+verified.json
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+!uv.lock
